@@ -1,0 +1,4 @@
+name: HeckersPluginACF
+version: '${project.version}'
+main: net.heckerdev.heckerspluginacf.HeckersPluginACF
+api-version: '1.17'
