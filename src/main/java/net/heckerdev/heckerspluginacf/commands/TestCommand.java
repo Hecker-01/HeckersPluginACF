@@ -11,6 +11,7 @@ public class TestCommand extends BaseCommand {
 
     @Syntax("")
     @Default
+    @CatchUnknown
     public void onDefault(CommandSender sender) {
         sender.sendMessage("test!");
 

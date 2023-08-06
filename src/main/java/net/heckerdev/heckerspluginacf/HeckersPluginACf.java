@@ -1,12 +1,13 @@
 package net.heckerdev.heckerspluginacf;
 
+import net.heckerdev.heckerspluginacf.commands.*;
 import net.heckerdev.heckerspluginacf.events.BlockBreakEventListener;
 import net.heckerdev.heckerspluginacf.events.BlockPlaceEventListener;
 import net.heckerdev.heckerspluginacf.events.PlayerJoinEventListener;
 import net.milkbowl.vault.permission.Permission;
 
 import co.aikar.commands.PaperCommandManager;
-import net.heckerdev.heckerspluginacf.commands.GroupsCommand;
+
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -44,6 +45,10 @@ public final class HeckersPluginACF extends JavaPlugin {
         // Registering commands.
         PaperCommandManager manager = new PaperCommandManager(this);
         manager.registerCommand(new GroupsCommand());
+        manager.registerCommand(new KitCommand());
+        manager.registerCommand(new TestCommand());
+        manager.registerCommand(new BookCommand());
+        manager.registerCommand(new SpawnCommand());
     }
 
     private boolean setupPermissions() {
