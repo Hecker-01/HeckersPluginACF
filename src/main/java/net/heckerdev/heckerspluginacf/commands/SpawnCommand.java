@@ -8,7 +8,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 @CommandAlias("spawn")
-@CommandPermission("heckerspluginacf.command.spawn")
 @Description("Teleports you to spawn.")
 public class SpawnCommand extends BaseCommand {
 

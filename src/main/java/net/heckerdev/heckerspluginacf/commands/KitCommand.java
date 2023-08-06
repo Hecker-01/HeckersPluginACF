@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 @CommandAlias("kit")
-@CommandPermission("heckerspluginacf.command.kit")
 @Description("Just a test command.")
 public class KitCommand extends BaseCommand {
 

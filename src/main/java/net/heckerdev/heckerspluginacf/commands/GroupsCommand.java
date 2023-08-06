@@ -10,7 +10,6 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 @CommandAlias("groups")
-@CommandPermission("heckerspluginacf.command.groups")
 @Description("Get the groups of yourself or another player.")
 public class GroupsCommand extends BaseCommand {
 

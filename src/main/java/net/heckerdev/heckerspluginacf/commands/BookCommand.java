@@ -14,7 +14,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
 @CommandAlias("book")
-@CommandPermission("heckerspluginacf.command.book")
 @Description("Gives you a book.")
 public class BookCommand extends BaseCommand {
 
