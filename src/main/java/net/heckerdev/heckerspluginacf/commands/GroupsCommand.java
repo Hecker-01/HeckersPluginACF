@@ -14,8 +14,9 @@ import org.jetbrains.annotations.NotNull;
 @Description("Get the groups of yourself or another player.")
 public class GroupsCommand extends BaseCommand {
 
-    @Syntax("(optional) <player>")
     @Default
+    @Syntax("(optional) <player>")
+    @CommandCompletion("@players")
     public void onDefault(@NotNull CommandSender sender, String[] args) {
         if (!sender.hasPermission("testplugin.command.groups")) {
             sender.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command!");
