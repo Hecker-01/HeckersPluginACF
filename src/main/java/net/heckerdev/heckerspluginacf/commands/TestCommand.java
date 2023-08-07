@@ -12,7 +12,7 @@ public class TestCommand extends BaseCommand {
     @Default
     @CatchUnknown
     public void onDefault(CommandSender sender) {
+        //send a message to the sender
         sender.sendMessage("test!");
-
     }
 }
