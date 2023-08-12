@@ -12,6 +12,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@SuppressWarnings({"UnusedReturnValue", "ConstantValue"})
 public final class HeckersPluginACF extends JavaPlugin {
 
     private static Permission perms = null;
@@ -49,6 +50,8 @@ public final class HeckersPluginACF extends JavaPlugin {
         manager.registerCommand(new TestCommand());
         manager.registerCommand(new BookCommand());
         manager.registerCommand(new SpawnCommand());
+        manager.registerCommand(new FlyCommand());
+        manager.registerCommand(new SmiteCommand());
     }
 
     private boolean setupPermissions() {
