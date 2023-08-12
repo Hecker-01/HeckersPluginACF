@@ -17,7 +17,7 @@ public class GroupsCommand extends BaseCommand {
     @Syntax("(optional) <player>")
     @CommandCompletion("@players")
     public void onDefault(@NotNull CommandSender sender, String[] args) {
-        if (!sender.hasPermission("testplugin.command.groups")) {
+        if (!sender.hasPermission("heckerspluginacf.command.groups")) {
             sender.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command!");
         } else if (args.length == 0) {
             if (sender instanceof Player) {
@@ -29,7 +29,7 @@ public class GroupsCommand extends BaseCommand {
                 sender.sendMessage(ChatColor.YELLOW + "You can also just use " + ChatColor.UNDERLINE + "/groups" + ChatColor.RESET + ChatColor.YELLOW + " to get your own groups, but you need to be a player to do that!" + ChatColor.RESET + ChatColor.GRAY + " Usage: " + ChatColor.UNDERLINE + "/groups");
             }
         } else {
-            if (!sender.hasPermission("testplugin.command.groups.others")) {
+            if (!sender.hasPermission("heckerspluginacf.command.groups.others")) {
                 sender.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command like this!");
             } else {
                 Player player = Bukkit.getPlayer(args[0]);

@@ -1,5 +1,7 @@
 package net.heckerdev.heckerspluginacf.commands;
 
+import net.heckerdev.heckerspluginacf.HeckersPluginACF;
+
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
 import net.md_5.bungee.api.ChatColor;
@@ -24,7 +26,7 @@ public class BookCommand extends BaseCommand {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             // Check if the player has permission
-            if (player.hasPermission("testplugin.command.book")) {
+            if (player.hasPermission("heckerspluginacf.command.book")) {
                 // Create a new ItemStack
                 ItemStack book = new ItemStack(Material.WRITTEN_BOOK);
                 BookMeta bookMeta = (BookMeta) book.getItemMeta();

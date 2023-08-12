@@ -16,7 +16,7 @@ public class FlyCommand extends BaseCommand {
     @Syntax("(optional) <player>")
     @CommandCompletion("@players")
     public void onDefault(@NotNull CommandSender sender, String[] args) {
-        if (!sender.hasPermission("testplugin.command.fly")) {
+        if (!sender.hasPermission("heckerspluginacf.command.fly")) {
             sender.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command!");
         } else if (args.length == 0) {
             if (sender instanceof Player) {
@@ -33,7 +33,7 @@ public class FlyCommand extends BaseCommand {
                 sender.sendMessage(ChatColor.YELLOW + "You can also just use " + ChatColor.UNDERLINE + "/fly" + ChatColor.RESET + ChatColor.YELLOW + " to enable/disable flight mode for yourself, but you need to be a player to do that!" + ChatColor.RESET + ChatColor.GRAY + " Usage: " + ChatColor.UNDERLINE + "/fly");
             }
         } else {
-            if (!sender.hasPermission("testplugin.command.fly.others")) {
+            if (!sender.hasPermission("heckerspluginacf.command.fly.others")) {
                 sender.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command like this!");
             } else {
                 Player player = Bukkit.getPlayer(args[0]);

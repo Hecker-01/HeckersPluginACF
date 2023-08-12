@@ -20,7 +20,7 @@ public class SpawnCommand extends BaseCommand {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             //if the player has permission to use the command
-            if (player.hasPermission("testplugin.command.spawn")) {
+            if (player.hasPermission("heckerspluginacf.command.spawn")) {
                 //teleporting the player to the world spawn
                 Location spawnLocation = player.getWorld().getSpawnLocation().add(0.5, 0, 0.5);
                 spawnLocation.setPitch(0);

@@ -17,7 +17,7 @@ public class KitCommand extends BaseCommand {
     public void onDefault(CommandSender sender) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (!sender.hasPermission("testplugin.command.kit")) {
+            if (!sender.hasPermission("heckerspluginacf.command.kit")) {
                 player.sendMessage(ChatColor.RED + "⚠ You do not have permission to use this command!");
 
             } else {
@@ -33,7 +33,7 @@ public class KitCommand extends BaseCommand {
     public void onKit(CommandSender sender) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("testplugin.command.kit.kit")) {
+            if (player.hasPermission("heckerspluginacf.command.kit.kit")) {
                 ItemStack diamond = new ItemStack(Material.DIAMOND);
 
                 ItemStack bricks = new ItemStack(Material.BRICK, 20);
@@ -52,7 +52,7 @@ public class KitCommand extends BaseCommand {
     public void onWood(CommandSender sender) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("testplugin.command.kit.wood")) {
+            if (player.hasPermission("heckerspluginacf.command.kit.wood")) {
                 ItemStack wood = new ItemStack(Material.OAK_PLANKS);
 
                 player.getInventory().addItem(wood);

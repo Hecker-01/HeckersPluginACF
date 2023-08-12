@@ -12,7 +12,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-@SuppressWarnings({"UnusedReturnValue", "ConstantValue"})
 public final class HeckersPluginACF extends JavaPlugin {
 
     private static Permission perms = null;
